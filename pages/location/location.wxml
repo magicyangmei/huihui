@@ -1,0 +1,45 @@
+<view class="location" hover-class="none" >
+   <view class="location-header" hover-class="none" >
+      <view class="search_btn">
+         <view bindtap='goSearch'>
+            <image src="../../assets/imgs/search.png"></image>
+            请输入小区名称
+         </view>
+      </view>
+   </view>
+   <view class="community" hover-class="none" >
+      <view class="community-box" hover-class="none" bindtap="goToleagueStore" >
+         <view class="community-now">
+            当前盟店
+            <image class="portrait" src="{{storeStaff.avatar}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            <view class="" selectable="false" space="false" decode="false">店主 : {{storeStaff.storeKeeper}}</view>
+            <view class="address-info" selectable="false" space="false" decode="false">
+               {{storeStaff.storeName}}
+            </view>
+            <view class="address" selectable="false" space="false" decode="false">
+               {{storeStaff.address}}
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class="community-near" hover-class="none" >
+      <view class="near-title" selectable="false" space="false" decode="false">附近社区</view>
+      <view class="community-box" wx:for-items="{{storeInfo}}" data-index="{{index}}"  bindtap="goToStore" hover-class="none">
+         <image class="portrait" src="{{item.avatar}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+         <view class="text-info" hover-class="none" >
+            <view class="address-info">
+               <view class="" hover-class="none" >{{item.storeName}}</view>
+               <view class="distance" hover-class="none" >
+                  {{item.distance}}
+               </view>
+            </view>
+            <view class="address" selectable="false" space="false" decode="false">
+              {{item.address}}
+            </view>
+            <view class="storeChref">店主：{{item.storeKeeper}}</view>
+         </view>
+         <image class="arrow-right" src="../../assets/imgs/location/arrow-right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+      
+   </view>
+</view>

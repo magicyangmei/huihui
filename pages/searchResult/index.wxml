@@ -1,0 +1,36 @@
+<view class="searchResult">
+	<view
+	 class="searchItem"
+	 wx:for="{{list}}"
+	 wx:key="Index"
+	 wx:for-item="item"
+	 bindtap="product_detail"
+	 data-id="{{item.id}}"
+	>
+		<image
+		 class=""
+		 src="{{item.pic}}"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="searchText">
+			<view class="name">
+				商品名称 :{{item.name}}
+			</view>
+			
+			<view class="originalPrice">
+				惠店价: {{item.originalPrice}}
+			</view>
+			<view class="huihuiPrice">
+				汇惠价: {{item.minPrice}}
+				<text class="distance">
+			 距您 <text >{{item.distance}}</text>米
+			</text>
+			</view>
+		</view>
+
+	</view>
+</view>
+

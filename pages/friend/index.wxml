@@ -1,0 +1,171 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+	<view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait2.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait3.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 1100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait2.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait3.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait3.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+    </view>
+    <view class="friendBox">
+		<image
+		 class="friendPortial"
+		 src="../../assets/imgs/location/portrait.jpeg"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="friendTextBox" hover-class="none" hover-stop-propagation="false">
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				昵称:xiaoxiao
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                盟店：万科城二期
+            </view>
+			<view class="" hover-class="none" hover-stop-propagation="false">
+				惠豆使用 <text class="usedhuidou"> 100 </text>个
+			</view>
+		</view>
+	</view>
+</view>
+

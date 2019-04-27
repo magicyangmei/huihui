@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "盟店列表",
+    "usingComponents": {
+      "loadmore": "../../components/loadmore/index"
+    }
+}

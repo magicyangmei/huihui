@@ -1,0 +1,117 @@
+<view>
+	<view class="keeper" hover-class="none" hover-stop-propagation="false">
+		<image
+		 class="avatar"
+		 src="{{storeNearKeeperInfo.avatar}}"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+		<view class="storeName" hover-class="none" hover-stop-propagation="false">
+			{{storeNearKeeperInfo.storeName}}
+			<navigator url="../../pages/location/location" hover-class="navigator-hover" style='display:inline-block'>
+				<image
+				 class="arrow-down"
+				 src="../../assets/imgs/location/arrow-down.png"
+				 mode="aspectFit|aspectFill|widthFix"
+				 lazy-load="false"
+				/>
+			</navigator>
+		</view>
+      
+		<navigator url="../../pages/search/index" hover-class="navigator-hover" style='display:inline-block'>
+			<image
+			 class="position"
+			 src="../../assets/imgs/location/location.png"
+			 mode="aspectFit|aspectFill|widthFix"
+			 lazy-load="false"
+			 binderror=""
+			 bindload=""
+			/>
+		</navigator>
+	</view>
+
+	<view>
+		<swiperImg sHeight="330rpx" imgList="{{banners}}" url="picUrl" />
+		<view wx:if="{{noticeList}}" class="notice">
+			<view class="notice_iteml">公告：</view>
+			<swiper
+			 wx:if="{{noticeList}}"
+			 class="notice_swiper"
+			 vertical="true"
+			 autoplay="true"
+			 circular="true"
+			 interval="3000"
+			>
+				<navigator
+				 wx:for-items="{{noticeList.dataList}}"
+				 wx:key="id"
+				 url="/pages/notice/show?id={{item.id}}"
+				 open-type="navigate"
+				>
+					<swiper-item>
+						<view class="notice_itemr">{{item.title}}</view>
+					</swiper-item>
+				</navigator>
+			</swiper>
+		</view>
+		<scroll-view
+		 scroll-x="true"
+		 class="scroll-view-x"
+		 style="padding-top:10rpx"
+		 scroll-with-animation="true"
+		 wx:if="{{tlist[currentTab].secondList}}"
+		 scroll-left='0'
+		 bindscroll="getleft"
+		>
+			<!-- <view>
+          <view class="navigator_second" wx:for="{{tlist[currentTab].secondList}}" wx:for-item="childItem" bindtap="getProductList" data-id="{{childItem.id}}">
+            <image class="navigator_icon" src="{{childItem.icon}}"></image>
+            <text class="navigator_text">{{childItem.name}}</text>
+          </view>
+        </view>
+        <view wx:if="{{tlist[currentTab].thirdList}}">
+          <view class="navigator_second" wx:for="{{tlist[currentTab].thirdList}}" wx:for-item="childItem" data-id="{{childItem.id}}" bindtap="getProductList">
+            <image class="navigator_icon" src="{{childItem.icon}}" ></image>
+            <text class="navigator_text">{{childItem.name}}</text>
+          </view>
+        </view> -->
+			<view class="navigator_second" bindtap="getFriend">
+				<image class="navigator_icon" src="../../assets/imgs/location/friend.png" />
+				<text class="navigator_text">惠友</text>
+			</view>
+			<view class="navigator_second" bindtap="getMemberList">
+				<image class="navigator_icon" src="https://cdn.it120.cc/apifactory/2017/11/17/637bf435b55faac1def00c97b25387ee.png" />
+				<text class="navigator_text">盟店</text>
+			</view>
+			<view class="navigator_second" bindtap="getProductList">
+				<image class="navigator_icon" src="{{tlist[currentTab].secondList[1].icon}}" />
+				<text class="navigator_text">总店</text>
+			</view>
+			<view class="navigator_second" bindtap="mapNav">
+				<image class="navigator_icon" src="../../assets/imgs/location/location1.png" />
+				<text class="navigator_text">一键定位</text>
+			</view>
+			<view class="navigator_second" bindtap="phoneCall">
+				<image class="navigator_icon" src="../../assets/imgs/location/tel.png" />
+				<text class="navigator_text">一键拨号</text>
+			</view>
+			<view class="navigator_second" bindtap="getProductList">
+				<image class="navigator_icon" src="../../assets/imgs/location/intro.png" />
+				<text class="navigator_text">店铺介绍</text>
+			</view>
+		</scroll-view>
+		<view wx:if="{{slideShow}}" class="slide">
+			<view class='slide-bar'>
+				<view class="slide-show" style="width:{{slideWidth}}rpx; margin-left:{{slideLeft<=1 ? 0 : slideLeft+'rpx'}};" />
+			</view>
+		</view>
+		<view>
+			<productBox pList="{{list[currentTab]}}" />
+		</view>
+	</view>
+
+	<loadmore mtype="{{mtype}}" hidden="{{hidden}}" nodata_str="已经没有更多了~" />
+</view>
+

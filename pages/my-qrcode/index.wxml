@@ -1,0 +1,63 @@
+<view class="container">
+	<view class="coupons-list">
+		<view
+		 class="coupons-item"
+		 wx:for-items="{{coupons}}"
+		 wx:for-index="idx"
+		 bindtap="gitCoupon"
+		 data-id="{{item.id}}"
+		>
+			<view style="font-size:30rpx;margin-bottom:10rpx"> ￥
+				<text style="font-size:50rpx;">{{item.money}}</text>
+			</view>
+			<view> {{item.name}} </view>
+			<view> 满 {{item.moneyHreshold}} 元使用 </view>
+		</view>
+	</view>
+	<view class='qrcode'>
+		<view class="showQrcode">
+			本次购物核销码
+		</view>
+
+		<image
+		 class=""
+		 src="../../assets/imgs/qrcode.png"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+
+	</view>
+	<view class='qrcode'>
+		<view class="showQrcode">
+			店铺banner图核销码
+		</view>
+
+		<image
+		 class=""
+		 src="../../assets/imgs/qrcode.png"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+
+	</view>
+	<view class='qrcode'>
+		<view class="showQrcode">
+			店铺积分核销码
+		</view>
+
+		<image
+		 class=""
+		 src="../../assets/imgs/qrcode.png"
+		 mode="aspectFit|aspectFill|widthFix"
+		 lazy-load="false"
+		 binderror=""
+		 bindload=""
+		/>
+
+	</view>
+</view>
+

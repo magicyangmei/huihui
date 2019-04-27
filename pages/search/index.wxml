@@ -1,0 +1,30 @@
+<!--pages/search/index.wxml-->
+<view class="search_input">
+	<view class="search_input_left">
+		<image src='../../assets/imgs/search.png' />
+		<input placeholder="{{searchStatus? '请输入小区名称':'请输入商品名称'}}" auto-focus />
+	</view>
+	<navigator
+	 class="search_resBtn"
+	 target=""
+	 url="../../pages/searchResult/index"
+	>
+		<view class="search_input_right"> 搜索 </view>
+	</navigator>
+
+</view>
+<view class="search_history" wx:if='{{!searchStatus}}'>
+	<view class="search_title">历史搜索
+		<image src="../../assets/imgs/delete.png" />
+	</view>
+	<view class="search_content">
+		<view wx:for="{{historyList}}">{{item}}</view>
+	</view>
+</view>
+<view class="search_hot" wx:if='{{!searchStatus}}'>
+	<view class="search_title">热门搜索</view>
+	<view class="search_content">
+		<view wx:for="{{hotList}}">{{item}}</view>
+	</view>
+</view>
+
